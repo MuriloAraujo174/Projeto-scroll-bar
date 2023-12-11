@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: 100vw;
+    height: 40px;
+    position: fixed;
+    z-index: 2;
+    
+}
+
+.h-logo {
+    display: inline-block;
+    list-style: none;
+    padding: 5px 0px 0px 10px;
+}
+
+.p-titulo {
+    display: inline-block;
+}
+
+.nav-link {
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    list-style: none;
+}
+
+.nav-links {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.h-logo:hover {
+    color: aquamarine;
+}
+
+.nav-links a:hover {
+    border-bottom: 3px solid aquamarine;
+    padding-bottom: 8px;
+    color: aquamarine;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    transition: ease-in-out;
+}
+
+section {
+    position: sticky;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.page1 {
+    background-color: #171717ee;
+    background-image: url(../img/fundo-madeira.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 600px;
+    display: block;
+    margin: auto;
+    padding: 100px 5px ;
+}
+
+.prof-dev {
+    display: block;
+    width: 300px;
+}
+
+.sobr-min {
+    display: inline-block;
+    width: 300px;
+}
+
+.fot-cap {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 50px;
+    animation: fluter 2s ease-in-out infinite alternate;
+}
+
+.page2 {
+    position: sticky;
+    height: 100vh;
+    background-color: #171717ee;
+    background-image: url(../img/back-pc.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container2 {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin: auto;
+    padding: 100px 5px ;
+}
+
+.card {
+    position: absolute;
+    display: inline-block;
+}
+
+.card1 {
+    left: 10px;
+    bottom: 95px;
+}
+
+.card2 {
+    left: 120px;
+}
+
+.card3 {
+    left: 230px;
+    bottom: 95px;
+}
+
+.card4 {
+    left: 340px;
+}
+
+.card5 {
+    left: 450px;
+    bottom: 95px;
+}
+
+.card-img {
+    width: 100px;
+}
+
+footer {
+    position: sticky;
+    height: 100vh;
+    scroll-snap-align: start;
+    background-color: #171717ee
+}
+
+.page3 {
+    background-image: url(../img/back-phone.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container3 {
+    width: 90vw;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.social-links {
+    display: block;
+    padding-top: 10px;
+    text-decoration: none;
+    
+}
+
+@keyframes fluter {
+    0% {
+        top: -5px;
+    }
+    100% {
+        top: 40px;
+    }
+}
